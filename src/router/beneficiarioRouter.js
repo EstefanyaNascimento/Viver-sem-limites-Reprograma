@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controllers/beneficiarioController");
+const controller = require("../controller/beneficiarioController");
 
-router.get("/", controller.getAll);
+router.get("/todos", controller.getAll);
 router.post("/", controller.postBeneficiario);
 router.put("/:_id", controller.putBeneficiario);
 router.delete("/:_id", controller.deleteBeneficiario)

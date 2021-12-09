@@ -46,7 +46,7 @@ const postDoador = (req, res) => {
           { $set: req.body },
           { upsert : true},
           function (err) {
-          res.status(201).send({ message: "Doador atualizada com sucesso!" });
+          res.status(201).send({ message: "Dados do doador atualizados com sucesso!" });
       });
     } catch (err) {
       return res.status(424).send({ message: err.message });

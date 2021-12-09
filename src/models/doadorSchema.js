@@ -9,6 +9,6 @@ const doadorSchema = new mongoose.Schema({
     versionKey: false
 });
 
-const doadorSchema = mongoose.model("doador", doadorSchema);
+const doador = mongoose.model("doador", doadorSchema);
 
 module.exports = doador;

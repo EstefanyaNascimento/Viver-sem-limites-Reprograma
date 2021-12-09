@@ -4,7 +4,7 @@ const beneficiarioSchema = new mongoose.Schema({
     nome : { type : String },
     idade : { type : String },
     deficiencia : { type : String },
-    pessoaFacilitadora : { type : String }
+    pessoaDoadora : { type : String }
 }, {
     versionKey: false
 });
