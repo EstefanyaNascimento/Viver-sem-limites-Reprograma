@@ -1,12 +1,15 @@
-const express = require("express");
-const cors = require('cors')
 require('dotenv-safe').config();
+const express = require("express"); // faz a ligação http, crud
+const cors = require('cors') // para nao dar conflito de api
+
 const database = require('./database/config')
 
 const beneficiario = require("./router/beneficiarioRouter");
 const doador = require("./router/doadorRouter");
 
-const app = express();
+const app = express(); //ele que chama o express
+
+
 /*const mongoose = require("mongoose");
 
 

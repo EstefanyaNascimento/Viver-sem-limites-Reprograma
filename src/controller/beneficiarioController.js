@@ -3,7 +3,7 @@ const SECRET = process.env.SECRET
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 
-const getAll = (req, res) => {
+/*const getAll = (req, res) => {
     const authHeader = req.get("authorization");
 
     if (!authHeader){
@@ -25,7 +25,21 @@ const getAll = (req, res) => {
         });
     })
 
-};
+};*/
+
+//Vai buscar todos os usuários cadastrados
+const getAll = async (req, res) => {
+  try {
+      const beneficiario = await beneficiarioSchema.find()
+      res.status(200).json({message: "Todos os envolvidos foram encontrados", 
+
+      beneficiario})
+
+  } catch (error) {
+      res.status(500).json({mensagem: error.message})
+  }
+}
+
 
 const postBeneficiario = (req, res) => {
     console.log(req.body);

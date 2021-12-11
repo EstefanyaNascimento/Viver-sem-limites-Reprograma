@@ -1,6 +1,6 @@
 const app = require("./src/app");
-const port = 9090;
+const port = process.env.PORT
 
 app.listen(process.env.PORT || port, () => {
-  console.log(`app está rodando na porta ${port}`);
+  console.log(`Viver sem limites pelo mundo ${port}`);
 });

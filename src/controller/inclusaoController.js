@@ -13,8 +13,6 @@ const getAll = async (req, res) => {
 }
 
 module.exports = {
-    getAll,
-    musicaPorId,
-    createMusic
+    getAll
     
 }

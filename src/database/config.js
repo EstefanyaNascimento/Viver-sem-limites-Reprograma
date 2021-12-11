@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-require('dotenv-safe').config()
 
 const MONGODB_URI = process.env.MONGODB_URI
 
@@ -10,7 +9,7 @@ const connect = async () => {
             useUnifiedTopology: true
         })
 
-        console.log("banco conectado!")
+        console.log("Em conexão com o mongoDB")
 
 
     } catch (error) {
