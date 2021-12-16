@@ -1,1 +1,1 @@
-web npm install && node serve.js
+web: npm install && node serve.js
