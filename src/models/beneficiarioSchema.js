@@ -27,11 +27,12 @@ const beneficiarioSchema = new mongoose.Schema({
         required: true
     },
     pessoabeneficiada: {
-        type: Array
+        type: String
     },
+  
     
 }, { timestamps: true })
 
-const beneficiario = mongoose.model("Beneficiario", beneficiarioSchema);
 
-module.exports = beneficiario
+module.exports = mongoose.model("Beneficiario", beneficiarioSchema);
+

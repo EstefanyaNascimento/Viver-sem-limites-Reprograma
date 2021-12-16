@@ -1,12 +1,9 @@
-const beneficiario = require("../models/doadorSchema.js");
-const SECRET = process.env.SECRET
-const jwt = require("jsonwebtoken");
-const fs = require("fs");
-
+const doadorSchema = require("../models/doadorSchema");
+const mongoose = require("mongoose");
 
 const getAll = async (req, res) => {
   try {
-      const doador = await beneficiarioSchema.find()
+      const doador = await doadorSchema.find()
       res.status(200).json({message: "Todos os envolvidos foram encontrados", 
 
       doador})
@@ -20,7 +17,7 @@ const postDoador = async (req, res) => {
 
   try {
 
-    const createDoador = await doador.create(req.body)
+    const createDoador = await doadorSchema.create(req.body)
     res.status(201).json({message: "Cadastro realizado com sucesso", createDoador })
 
 } catch (error){
@@ -30,7 +27,7 @@ const postDoador = async (req, res) => {
 
 const putDoador  = async (req, res) => {
   try {
-      const putDoador = await beneficiario.findById(req.params.id);
+      const putDoador = await doadorSchema.findById(req.params.id);
        
       if(putDoador)   {
         putDoador.beneficiario =  req.body.beneficiario || putDoador.doador

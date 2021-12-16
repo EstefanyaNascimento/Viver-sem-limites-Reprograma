@@ -2,15 +2,15 @@
     {
     "doador": "anonimo",
     "idade": 10,
-    "itemdoado": [
+    "equipamento": [
         "Cadeira de rodas Pediátricas",
         "Cadeira de rodas para banho" 
     ],
     "endereco": "Av domingos Ferreira",
     "bairro": "caxias",
     "cidade": "Recife",
-    "telefone": "3232 - 3232",
-    "deliverydeentrega": true
+    "telefone": "3232 - 3232"
+    
   },
   {
     "doador": "Emanuel Silva",
@@ -59,8 +59,8 @@
       "bairro": "Cruz de reboucas",
       "cidade": "Recife",
       "telefone": "3232 - 3232",
-      "pessoadoarora":  "anonimo",
-      "deliverydeentrega": true
+      "pessoadoarora":  "anonimo"
+     
 
       
   },

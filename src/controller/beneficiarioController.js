@@ -1,12 +1,11 @@
-const beneficiario = require("../models/beneficiarioSchema.js");
-const SECRET = process.env.SECRET
-
+const beneficiarioSchema = require("../models/beneficiarioSchema.js")
+const mongoose = require("mongoose");
 
 
 const getAll = async (req, res) => {
   try {
       const beneficiario = await beneficiarioSchema.find()
-      res.status(200).json({message: "Todos os envolvidos foram encontrados", 
+      res.status(200).json({message: "Todos os beneficiarios que foram encontrados", 
 
       beneficiario})
 
@@ -20,8 +19,8 @@ const postBeneficiario = async (req, res) => {
 
     try {
 
-      const createBeneficiario = await beneficiario.create(req.body)
-      res.status(201).json({message: "Cadastro realizado com sucesso", createBeneficiario  })
+      const createBeneficiario = await beneficiarioSchema.create(req.body)
+      res.status(201).json({message: "Cadastro realizado com sucesso", createBeneficiario})
 
   } catch (error){
     res.status(500).json({message:error.message})
@@ -33,7 +32,7 @@ const putBeneficiario  = async (req, res) => {
         const putBeneficiario = await beneficiario.findById(req.params.id)
          
         if(putBeneficiario)   {
-            putBeneficiario.beneficiario =  req.body.beneficiario || putBeneficiario.benficiario
+            putBeneficiario.nome =  req.body.nome || putBeneficiario.nome
             putBeneficiario.idade = req.body.idade || putBeneficiario.idade
             putBeneficiario.equipamento = req.body.equipamento || putBeneficiario.equipamento
             putBeneficiario.endereco = req.body.endereco || putBeneficiario.endereco

@@ -8,5 +8,3 @@ router.get("/",  (req, res) => {
         mensagem: "Olá mundo! Esta é uma versão de API focada em ajudar pessoas com deficiência a doar e receber equipamentos de forma gratuita."
     })
 })
-
-module.exports = router

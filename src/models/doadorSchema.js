@@ -1,18 +1,37 @@
 const mongoose = require("mongoose");
 
 const doadorSchema = new mongoose.Schema({
-    doador: { type : String },
-    idade : { type : String },
-    equipamento : { type : String },
-    endereco: { type : String },
-    bairro: { type : String },
-    cidade: { type : String },
-    telefone: { type : String },
-    pessoadoadora: { type : String },
-}, {
-    versionKey: false
-});
+    id: mongoose.Schema.Types.ObjectId,
+    doador: {
+        type: String,
+        required: true
+    },
+    idade: {
+        type: String,
+        required: true
+    },
+    equipamento: {
+        type: String,
+        required: true 
+    },
+    bairro: {
+        type: String,
+        required: true 
+    },
+    cidade: {
+        type: String,
+        required: true 
+    },
+    telefone: {
+        type: String,
+        required: true
+    },
+    pessoabeneficiada: {
+        type: String
+    },
+  
+    
+}, { timestamps: true })
 
-const doador = mongoose.model("doador", doadorSchema);
 
-module.exports = doador;
+module.exports = mongoose.model("doador", doadorSchema);
