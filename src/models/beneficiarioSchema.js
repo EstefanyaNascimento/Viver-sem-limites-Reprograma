@@ -1,18 +1,37 @@
 const mongoose = require("mongoose");
 
 const beneficiarioSchema = new mongoose.Schema({
-    beneficiario: { type : String },
-    idade : { type : String },
-    itemreceber : { type : String },
-    endereco: { type : String },
-    bairro: { type : String },
-    cidade: { type : String },
-    telefone: { type : String },
-    pessoabeneficiada: { type : String },
-}, {
-    versionKey: false
-});
+    id: mongoose.Schema.Types.ObjectId,
+    nome: {
+        type: String,
+        required: true
+    },
+    idade: {
+        type: String,
+        required: true
+    },
+    equipamento: {
+        type: Number,
+        required: true 
+    },
+    bairro: {
+        type: String,
+        required: true 
+    },
+    cidade: {
+        type: String,
+        required: true 
+    },
+    telefone: {
+        type: String,
+        required: true
+    },
+    pessoabeneficiada: {
+        type: Array
+    },
+    
+}, { timestamps: true })
 
-const beneficiario = mongoose.model("beneficiario", beneficiarioSchema);
+const beneficiario = mongoose.model("Beneficiario", beneficiarioSchema);
 
-module.exports = beneficiario;
+module.exports = beneficiario
