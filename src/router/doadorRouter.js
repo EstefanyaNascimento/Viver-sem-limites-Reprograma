@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controller/doadorController");
 
-router.get("/", controller.getAll);
-router.post("/", controller.postDoador);
-router.put("/:_id", controller.putDoador);
-router.delete("/:_id", controller.deleteDoador)
+router.get("/all", controller.getAll);
+router.post("/create", controller.postDoador);
+router.put("/update/:id", controller.putDoador);
+//router.delete("/delete/:id", controller.deleteDoador)
 
 module.exports = router;

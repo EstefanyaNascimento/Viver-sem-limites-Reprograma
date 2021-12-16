@@ -1,40 +1,28 @@
-require('dotenv-safe').config();
-const express = require("express"); // faz a ligação http, crud
-const cors = require('cors') // para nao dar conflito de api
 
-const database = require('./database/config')
+require("dotenv-safe").config();
+const express = require("express");
+const cors = require("cors");
+const db = require("./db/config.js");
+
+
+const app = express();
+db.connect();
+
+app.use(cors());
+app.use(express.json());
+
 
 const beneficiario = require("./router/beneficiarioRouter");
 const doador = require("./router/doadorRouter");
+const index = require("./router/indexRouter");
 
-const app = express(); //ele que chama o express
-
-
-/*const mongoose = require("mongoose");
-
-
-mongoose.connect(`${process.env.MONGODB_URI}`, { useNewUrlParser: true, useUnifiedTopology: true });*/
-
-//db.on("error", console.log.bind(console, "connection error:"));
-//db.once("open", function (){
-    //console.log("Conexão feita com sucesso!");
-//});*//
-
-
-/*app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-Woth, Content-Type, Accept"
-    );
-    next();
-});*/
-
-app.use(cors());
 app.use("/beneficiario", beneficiario);
 app.use("/doador", doador);
+app.use("/", index);
 
-database.connect()
+
+
+
 
 
 module.exports = app;

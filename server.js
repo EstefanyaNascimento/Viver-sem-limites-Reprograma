@@ -1,7 +1,7 @@
 const app = require("./src/app");
-const port = process.env.PORT || 9090;
+const PORT= process.env.PORT || 8085;
 
-app.listen(process.env.PORT || port, () => {
-console.log(`Viver sem limites pelo mundo ${port}`)
+app.listen(process.env.PORT || PORT, () => {
+console.log(`Viver sem limites pelo mundo ${PORT}`)
 
 })

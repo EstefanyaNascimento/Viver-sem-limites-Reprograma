@@ -8,7 +8,7 @@ const beneficiarioSchema = new mongoose.Schema({
     bairro: { type : String },
     cidade: { type : String },
     telefone: { type : String },
-    pessoadoadora: { type : String },
+    pessoabeneficiada: { type : String },
 }, {
     versionKey: false
 });

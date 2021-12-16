@@ -4,7 +4,7 @@ const controller = require("../controller/beneficiarioController");
 
 router.get("/all", controller.getAll);
 router.post("/post", controller.postBeneficiario);
-router.put("/:_id", controller.putBeneficiario);
-router.delete("/:_id", controller.deleteBeneficiario)
+router.put("/update/:id", controller.putBeneficiario);
+//router.delete("/delete/:id", controller.deleteBeneficiario)
 
 module.exports = router;

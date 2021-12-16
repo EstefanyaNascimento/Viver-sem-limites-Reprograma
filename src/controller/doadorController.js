@@ -1,74 +1,56 @@
-const doador = require("../models/doadorSchema.js");
+const beneficiario = require("../models/doadorSchema.js");
 const SECRET = process.env.SECRET
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 
-const getAll = (req, res) => {
-    const authHeader = req.get("authorization");
 
-    if (!authHeader){
-        return res.status(401).send("Insira o header!");
-    };
+const getAll = async (req, res) => {
+  try {
+      const doador = await beneficiarioSchema.find()
+      res.status(200).json({message: "Todos os envolvidos foram encontrados", 
 
-    const token = authHeader.split(" ")[1];
+      doador})
 
-    jwt.verify(token, SECRET, function(erro) {
-        if(erro) {
-            return res.status(403).send("O seu token é inválido!")
-        }
+  } catch (error) {
+      res.status(500).json({mensagem: error.message})
+  }
+}
 
-        doador.find(function (err, doador){
-            if(err){
-                res.status(500).send({ message : err.message })
-            }
-            res.status(200).send(doador);
-        });
-    })
+const postDoador = async (req, res) => {
 
-};
+  try {
 
-const postDoador = (req, res) => {
-    console.log(req.body);
-  
-    let doador = new doador(req.body);
-    doador.save(function(err){
-      if (err) res.status(500).send({ message: err.message });
-      res.status(201).send(doador.toJSON());
-    });
-  };
+    const createDoador = await doador.create(req.body)
+    res.status(201).json({message: "Cadastro realizado com sucesso", createDoador })
 
-  const putDoador = (req, res) => {
-    const _id = req.params._id;
-  
-    try {
-        doador.update(
-          { _id },
-          { $set: req.body },
-          { upsert : true},
-          function (err) {
-          res.status(201).send({ message: "Dados do doador atualizados com sucesso!" });
-      });
-    } catch (err) {
-      return res.status(424).send({ message: err.message });
-    };
-  };
+} catch (error){
+  res.status(500).json({message:error.message})
+}
+}
 
-  const deleteDoador = (req, res) => {
-    const _id = req.params._id;
-
-    doador.deleteOne({ _id }, function(err, doador) {
-      if(err) {
-        return res.status(424).send({ message: err.message})
-      } else {
-        return res.status(200).send(doador)
+const putDoador  = async (req, res) => {
+  try {
+      const putDoador = await beneficiario.findById(req.params.id);
+       
+      if(putDoador)   {
+        putDoador.beneficiario =  req.body.beneficiario || putDoador.doador
+        putDoador.idade = req.body.idade || putDoador.idade
+        putDoador.equipamento = req.body.equipamento || putDoador.equipamento
+        putDoador.endereco = req.body.endereco || putDoador.endereco
+        putDoador.bairro = req.body.bairro || putDoador.bairro
+        putDoador.cidade = req.body.cidade || putDoador.cidade
+        putDoador.telefone = req.body.telefone || putDoador.telefone
+        putDoador.pessoaDoadora = req.body.pessoaDoadora || putDoador.pessoaDoadora
       }
-    })
-};
+  } catch (error) {
+      res.status(500).json({mensagem: error.message})
+  }
+}
 
 
 module.exports = {
     getAll,
     postDoador,
-    putDoador,
-    deleteDoador
+    putDoador
+    
 };

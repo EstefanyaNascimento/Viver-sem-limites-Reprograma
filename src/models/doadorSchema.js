@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const doadorSchema = new mongoose.Schema({
     doador: { type : String },
     idade : { type : String },
-    itemdoado : { type : String },
+    equipamento : { type : String },
     endereco: { type : String },
     bairro: { type : String },
     cidade: { type : String },
