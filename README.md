@@ -162,13 +162,13 @@ Siga os passos e inclua as informações abaixo:
 
 * Heroku: https://viver-sem-limites-reprograma.herokuapp.com - (consumir API)
 
-    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar os endpoints da API localmente ou via Heroku.
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para chamar e testar os endpoints da API localmente ou via Heroku.
 
 <br>
 
 ## 💜Rotas
 
-### Retorna teste com apresentação 
+
 
 | Método HTTP  | Tipo Rota | Endpoint                     | Descrição                            |
 | ------------ | --------- | ---------------------------- | ------------------------------------ |
@@ -176,7 +176,7 @@ Siga os passos e inclua as informações abaixo:
 
 <br>
 
-### 💜Manipulação das Rotas dos doadores:
+## 💜Manipulação das Rotas dos doadores:
 
 | Método HTTP  | Tipo Rota | Endpoint                | Descrição                                            |
 | ------------ | --------- | ----------------------- | -----------------------------------------------------|
@@ -188,7 +188,7 @@ Siga os passos e inclua as informações abaixo:
 <br>
 
 
-### 💜 Collections da API que deverá retornar seguinte JSON:
+## 💜 Collections da API que deverá retornar o  seguinte JSON:
 
 ```jsx
 
@@ -212,7 +212,7 @@ Siga os passos e inclua as informações abaixo:
 ```
  <br>
 
-💜 Projeto em Construção (futuras melhorias)
+## 💜 Projeto em Construção (Futuras melhorias)
 
 <br>
 
@@ -243,26 +243,12 @@ Toda sugestão de melhoria deste projeto será muito bem-vinda!!!
 
 <br>
 
-##  💜 Agradecimentos
-
-
-<p> AGRADECER AQUI </p>
-
-
-<p> linkar o insta de quem nao tem linkedin <a href="https://www.instagram.com/may_desiderio/">POR NOME AQUI</a>, desse jeito.</p>
-
-<p>  <a href="https://www.linkedin.com/company/reprogramabr/">{Reprograma}</a>  a  <a href="https://www.linkedin.com/in/amanda-santos-b50200165/">Amanda Leal</a> e <a href="https://www.linkedin.com/in/leticiardesiderio/">Letícia Desiderio</a> .
-
-
-API foi desenvolvida como Projeto Final para a conclusão do curso de Backend {Reprograma}.
-
-FALTA MAIS GENTE </p>
 
 <br>
 
 
 
-💜 Autora
+## 💜 Autora
 
 <br>
 
