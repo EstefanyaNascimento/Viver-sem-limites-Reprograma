@@ -15,7 +15,7 @@
 ## <strong> Viver sem limites </strong> é um projeto - API, que foi desenvolvido para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
 
 
-## 💜O PROJETO FINAL**  
+## 💜O PROJETO FINAL
 
 <p align="justify"> É uma iniciativa para ajudar  pessoas que precisam de muletas, andadores, cadeiras de rodas e equipamentos afins, mas não tem recursos para comprar estes equipamentos,  assim esta API vai unir quem tem itens disponíveis para doação com quem está precisando deles no momento.
 <p align="justify"> Desenvolver um aplicativo que conecta quem doa com quem precisa. O aplicativo armazena as informações de quem oferece itens para doar e de quem precisa deles para criar um banco de dados em que seja possível cruzar esses interesses, sem a necessidade de armazenar os itens. 
@@ -23,7 +23,14 @@
 
 <br>
 
-## 💜Descrição da API - VIVER SEM LIMITES**
+## 💜Descrição da API - VIVER SEM LIMITES
+
+
+<p align="justify"> De acordo com o último senso do IBGE 46 milhões de brasileiros, cerca de 24% da população, tem algum grau de dificuldade em pelo menos uma das habilidades investigadas (enxergar, ouvir, caminhar ou subir degraus), ou possuir deficiência mental / intelectual.  A grande maioria de hospitais e clinicas só tem o modelo convencioanl de cadeiras de rodas que é destinado para o atendimento de mergencia para pessoas com mobilidade reduzida e paraplégicos.
+
+Apesar do plano nacional "Viver sem limites" para consegui uma cadeira motorizada pelo SUS por exemplo pode demorar alguns meses, em alguns casos é preciso recorrer a justiça, que torno o processo ainda mais lento.
+
+Pensando nesta demora do SUS uma ação mais rápida e funcional foi a criação de uma API com o mesmo nome do programa Viver sem limites, onde pessoas com equipamentos para deificientes e que desejam doar possa fazer isso sem custo. No futuro contato entre doadores e receptores sem muita burocracia. 
 
 <p align="justify">A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD, integrado com o banco de dados NoSQL, sendo possível listar, cadastrar, atualizar e deletar cadastros dos doadores de equipamentos para deficientes.
 
@@ -52,7 +59,7 @@
 
 <br>
 
-## 💜Tecnologias Utilizadas**
+## 💜Tecnologias Utilizadas
 
 Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 
@@ -69,7 +76,7 @@ Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 
 <br>
 
-## 💜Bibliotecas Aplicadas**
+## 💜Bibliotecas Aplicadas
 Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 
 <p  align="justify">
@@ -85,7 +92,7 @@ Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 
 <br>
 
-## 💜Arquitetura MVC** 
+## 💜Arquitetura MVC
 Arquitetura padrão da API Viver sem limites:
 ```
  📁 VIVER SEM LIMITES
