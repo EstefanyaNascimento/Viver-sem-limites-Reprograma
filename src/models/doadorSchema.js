@@ -26,10 +26,7 @@ const doadorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    pessoabeneficiada: {
-        type: String
-    },
-  
+   
     
 }, { timestamps: true })
 

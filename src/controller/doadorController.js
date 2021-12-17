@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const getAll = async (req, res) => {
   try {
       const doador = await doadorSchema.find()
-      res.status(200).json({message: "Todos os envolvidos foram encontrados", 
+      res.status(200).json({message: " Lista de doadores e itens doados", 
 
       doador})
 
@@ -37,7 +37,7 @@ const putDoador  = async (req, res) => {
         putDoador.bairro = req.body.bairro || putDoador.bairro
         putDoador.cidade = req.body.cidade || putDoador.cidade
         putDoador.telefone = req.body.telefone || putDoador.telefone
-        putDoador.pessoaDoadora = req.body.pessoaDoadora || putDoador.pessoaDoadora
+        
       }
 
       const savedPutDoador = await putDoador.save()

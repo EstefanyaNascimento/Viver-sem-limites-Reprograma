@@ -1,4 +1,6 @@
-
+```diff
++                     Bootcamp - Todas em Tech, turma 14° de Back-End.
+```
 
 <br>
 
@@ -7,69 +9,29 @@
 <p align="center"><p>
 </h1>
 
+## <strong> Viver sem limites </strong> é um projeto - API, que foi desenvolvido para a conclusão do curso de Backend [{Reprograma}](https://reprograma.com.br/).
 
-> Iniciativa para ajudar pessoas com deficiência a doarem e receberem equipamentos de acordo com sua necessidade
 
-> Status: **em construção** ✅
+## **O PROJETO FINAL**  
 
-<p align="justify">
-  <a>
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/xeniabarreto/FarmaBem">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/xeniabarreto/FarmaBem">
-  </a>
-</p>
+<p align="justify"> É uma iniciativa para ajudar  pessoas que precisam de muletas, andadores, cadeiras de rodas e equipamentos afins, mas não tem recursos para comprar,  assim esta API vai unir quem tem esses itens disponíveis com quem está precisando deles no momento.
+<p align="justify"> Desenvolver um aplicativo que conecta quem doa com quem precisa. O aplicativo armazena as informações de quem oferece itens para doar e de quem precisa deles para criar um banco de dados em que seja possível cruzar esses interesses, sem a necessidade de armazenar os itens. 
+
+
 <br>
 
-## **Sumário**
+## **Descrição da API - VIVER SEM LIMITES**
 
-- [Origem](##origem)
-- [Objetivo](#objetivo)
-- [Link Apresentação](#link)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Bibliotecas Aplicadas](#bibliotecas-aplicadas)
-- [Arquiretura MVC](#arquitetura-mvc)
-- [Instruções para Instalação](instruções-para-instalação)
-- [Portas](#portas)
-- [Rotas](#rotas)
-- [Collections](#collections)
-- [Melhorias Futuras](#melhorias-futuras)
-- [Referências](#referências)
-- [Agradecimentos](#agradecimentos)
-- [Autora](#autora)
-<br>
-
-
-## **Origem**  
-
-<p align="justify">Em meio....
-
-<p align="justify">No proce.... 
-
-<p align="justify">Olhei a.....
-
-<p align="justify">Passado algu.....
-<br>
-
-## **Objetivo**
-
-<p align="justify">A API ....
-
-<p align="justify">Poderá c......
-
-<p align="justify">Viabilizará o gerenciamento dos dados e informações através do cadastro de administradores.
-
-<p align="justify">A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD, integrado com o banco de dados NoSQL, sendo possível listar, cadastrar, atualizar e deletar cadastros pessoas beneficiadas e doadores de equipamentos para deficientes.
+<p align="justify">A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD, integrado com o banco de dados NoSQL, sendo possível listar, cadastrar, atualizar e deletar cadastros dos doadores de equipamentos para deficientes.
 
 - Definição CRUD: 
     
-
       CREATE (CRIAR)
       READ (LER, CONSULTAR)
       UPDATE (ATUALIZAR) 
       DELETE (DESTRUIÇÃO, REMOÇÃO)
 
-
+<p align="justify">O  projeto é uma API REST que irá permitir que pessoas que tenha em casa itens como cadeiras de rodas, de banho, descanso, muletas, bengalas
 
 <br>
 
@@ -81,9 +43,13 @@ FALTA COLOCAR O LINK
 
 ## **Funcionalidades**
 
-- Cadastro das farmácias, medicamentos e administradores;
-- Informe da localidade e contato das farmácias;
-- Informe da disponibilidade dos medicamentos.
+- Incentivar a doação de itens que estejam em bom estado e possa ser usado por outras pessoas com as mesmas condições de deficiência
+- Listar todas as pessoas que estão cadastradas no sistema
+- Cadastrar itens e doadores
+- Atualizar lista de doadores e equipamentos disponíveis
+- Deletar os itens já doados que não estão mais disponíveis
+
+  
 
 <br>
 
@@ -92,14 +58,13 @@ FALTA COLOCAR O LINK
 Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 
 <p  align="justify">
-<a  href="https://www.javascript.com/"><img  alt="Java Script"  src="https://img.shields.io/badge/JavaScript-pink">
-<a  href="https://git-scm.com/"><img  alt="Git version"  src="https://img.shields.io/badge/Git/GitHub-pink">
-<a  href="https://nodejs.org/pt-br/"><img  alt="Node version"  src="https://img.shields.io/badge/NodeJS-pink">
-<a  href="https://www.mongodb.com/cloud/atlas"><img  alt="Node version"  src="https://img.shields.io/badge/MongoDB%20Atlas-pink">
-<a  href="https://www.postman.com/"><img  alt="Postman"  src="https://img.shields.io/badge/Postman-pink">
-<a  href="https://code.visualstudio.com/"><img  alt="VsCode"  src="https://img.shields.io/badge/VSCode-pink">
-<a  href="https://dashboard.heroku.com/apps"><img  alt="Heroku"  src="https://img.shields.io/badge/Heroku-pink">
-<a  href=""><img  alt="Mit"  src="https://img.shields.io/badge/Licence MIT-pink"></a>
+<a  href="https://www.javascript.com/"><img  alt="Java Script"  src="https://img.shields.io/badge/JavaScript-purple">
+<a  href="https://git-scm.com/"><img  alt="Git version"  src="https://img.shields.io/badge/Git/GitHub-purple">
+<a  href="https://nodejs.org/pt-br/"><img  alt="Node version"  src="https://img.shields.io/badge/NodeJS-purple">
+<a  href="https://www.mongodb.com/cloud/atlas"><img  alt="Node version"  src="https://img.shields.io/badge/MongoDB%20Atlas-purple">
+<a  href="https://www.postman.com/"><img  alt="Postman"  src="https://img.shields.io/badge/Postman-purple">
+<a  href="https://code.visualstudio.com/"><img  alt="VsCode"  src="https://img.shields.io/badge/VSCode-purple">
+<a  href="https://dashboard.heroku.com/apps"><img  alt="Heroku"  src="https://img.shields.io/badge/Heroku-purple">
 
 
 <br>
@@ -108,14 +73,13 @@ Para a construção deste projeto, as seguintes tecnologias foram utilizadas:
 Para a construção deste projeto, as seguintes bibliotecas foram aplicadas:
 
 <p  align="justify">
-<a  href="https://expressjs.com/pt-br/"><img  alt="Express version"  src="https://img.shields.io/badge/express-4.17.1-pink">
-<a  href="https://www.npmjs.com/package/nodemon"><img  alt="Nodemon version"  src="https://img.shields.io/badge/nodemon-2.0.6-pink">
-<a  href="https://www.npmjs.com/package/dotenv-safe"><img  alt="Dotenv-safe version"  src="https://img.shields.io/badge/dotenv-8.2.0-pink">
-<a  href="https://mongoosejs.com/"><img  alt="Mongoose version"  src="https://img.shields.io/badge/mongoose-5.10.17-pink">
-<a  href="https://www.npmjs.com/package/cors"><img  alt="npm version"  src="https://img.shields.io/badge/cors-2.8.5-pink">
-<a  href="https://www.npmjs.com/"><img  alt="npm version"  src="https://img.shields.io/badge/npm-6.14.6-pink">
-<a  href="https://www.npmjs.com/package/bcryptjs"><img  alt="Bcrypt version"  src="https://img.shields.io/badge/bcrypt-5.0.0-pink">
-<a  href="https://www.npmjs.com/package/jsonwebtoken"><img  alt="Jsonwebtoken version"  src="https://img.shields.io/badge/jsonwebtoken-8.5.1-pink"></a>
+<a  href="https://expressjs.com/pt-br/"><img  alt="Express version"  src="https://img.shields.io/badge/express-4.17.1-purple">
+<a  href="https://www.npmjs.com/package/nodemon"><img  alt="Nodemon version"  src="https://img.shields.io/badge/nodemon-2.0.6-purple">
+<a  href="https://www.npmjs.com/package/dotenv-safe"><img  alt="Dotenv-safe version"  src="https://img.shields.io/badge/dotenv-8.2.0-purple">
+<a  href="https://mongoosejs.com/"><img  alt="Mongoose version"  src="https://img.shields.io/badge/mongoose-5.10.17-purple">
+<a  href="https://www.npmjs.com/package/cors"><img  alt="npm version"  src="https://img.shields.io/badge/cors-2.8.5-purple">
+<a  href="https://www.npmjs.com/"><img  alt="npm version"  src="https://img.shields.io/badge/npm-6.14.6-purple">
+
 </p>
 
 
