@@ -26,13 +26,13 @@
 ## 💜Descrição da API - VIVER SEM LIMITES
 
 
-<p align="justify"> De acordo com o último senso do IBGE 46 milhões de brasileiros, cerca de 24% da população, tem algum grau de dificuldade em pelo menos uma das habilidades investigadas (enxergar, ouvir, caminhar ou subir degraus), ou possuir deficiência mental / intelectual.  A grande maioria de hospitais e clinicas só tem o modelo convencioanl de cadeiras de rodas que é destinado para o atendimento de mergencia para pessoas com mobilidade reduzida e paraplégicos.
-
-Apesar do plano nacional "Viver sem limites" para consegui uma cadeira motorizada pelo SUS por exemplo pode demorar alguns meses, em alguns casos é preciso recorrer a justiça, que torno o processo ainda mais lento.
-
-Pensando nesta demora do SUS uma ação mais rápida e funcional foi a criação de uma API com o mesmo nome do programa Viver sem limites, onde pessoas com equipamentos para deificientes e que desejam doar possa fazer isso sem custo. No futuro contato entre doadores e receptores sem muita burocracia. 
-
+<p align="justify"> De acordo com o último censo do IBGE, 46 milhões de brasileiros, cerca de 24% da população, têm algum grau de dificuldade em pelo menos uma das habilidades investigadas (enxergar, ouvir, caminhar ou subir degraus), ou possuir deficiência mental / intelectual. A grande maioria de hospitais e clínicas só tem o modelo convencional de cadeiras de rodas que é destinado para o atendimento de emergência para pessoas com mobilidade reduzida e paraplégicos.
+Apesar do plano nacional "Viver sem limites" para conseguir uma cadeira motorizada pelo SUS por exemplo pode demorar alguns meses, em alguns casos é preciso recorrer à justiça, o que tornou o processo ainda mais lento.
+ 
+Pensando nesta demora do SUS, uma ação mais rápida e funcional foi a criação de uma API com o mesmo nome do programa Viver sem limites, onde pessoas com equipamentos para deificientes e que desejam doar possam fazer isso sem custo. No futuro contato entre doadores e receptores sem muita burocracia.
+ 
 <p align="justify">A construção deste projeto consiste em uma API RESTFull fundamentada no CRUD, integrado com o banco de dados NoSQL, sendo possível listar, cadastrar, atualizar e deletar cadastros dos doadores de equipamentos para deficientes.
+
 
 - Definição CRUD: 
     
