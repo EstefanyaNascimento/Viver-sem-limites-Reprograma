@@ -187,6 +187,9 @@ Siga os passos e inclua as informações abaixo:
 
 <br>
 
+<p p align="center"><img src="assets/postman.gif"></img></p>
+
+
 
 ## 💜 Collections da API que deverá retornar o  seguinte JSON:
 
